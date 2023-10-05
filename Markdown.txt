@@ -1,0 +1,12 @@
+Changelog:
+10/4/2023
+Complete reformat of Sprint 1 logs and pre-SCRUM/sprint information:
+Sprint1Breakdown.xlsx moved to Sprint_1 Burndown folder.
+Sprint1Planning.pdf moved to Sprint_1 Planning folder
+Sprint1Retro.png moved to Sprint_1 Retrospective folder
+SprintStandup9_20_23.pdf, SprintStandup9_22_23.pdf, SprintStandUp9_27.pdf and SprintStandUp9_29.pdf moved to Sprint_1 Standups folder
+Screenshot (25).png and Screenshot (26).png moved to Sprint_1 Kanban folder
+
+Pre-SCRUM:
+These are all files done before following SCRUM and Sprint.
+Scrum meeting09_08_23.pdf, Scrum meeting09_15_23.pdf and SCRUM09_10_23 moved to Pre-SCRUM folder.
