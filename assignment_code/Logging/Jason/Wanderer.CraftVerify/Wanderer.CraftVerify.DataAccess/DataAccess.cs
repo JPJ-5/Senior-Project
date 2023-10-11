@@ -2,18 +2,30 @@
 
 namespace Wanderer.CraftVerify.DataAccess
 {
-    public static class DataAccess
+    public class DataAccess
     {
-        public static void RunCommand(SqlCommand command) //run any SQL command to a server specified in the builder
+        private String dataSource;
+        private String userID;
+        private String password;
+        private String database;
+        public DataAccess(String dataSource, String userID, String password, String database)
+        {
+            this.dataSource = dataSource;
+            this.userID = userID;
+            this.password = password;
+            this.database = database;
+        }
+
+        public void RunCommand(SqlCommand command) //run any SQL command to a server specified in the builder
         {
             try
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-                builder.DataSource = "localhost";
-                builder.UserID = "TestAdmin";
-                builder.Password = "TestPassword123";
-                builder.InitialCatalog = "TestDatabase";
+                builder.DataSource = dataSource;
+                builder.UserID = userID;
+                builder.Password = password;
+                builder.InitialCatalog = database;
                 builder.TrustServerCertificate = true;
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
